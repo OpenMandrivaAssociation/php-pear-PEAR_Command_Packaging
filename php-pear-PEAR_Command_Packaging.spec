@@ -17,6 +17,7 @@ Requires(preun): php-pear-PEAR >= 1.4.10
 Requires:	php-pear-PEAR >= 1.4.10
 BuildArch:	noarch
 BuildRequires:	dos2unix
+BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 This command is an improved implementation of the standard PEAR "makerpm" 
