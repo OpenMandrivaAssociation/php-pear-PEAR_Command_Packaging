@@ -6,7 +6,7 @@
 Summary:	%{_pearname} - Create RPM spec files from PEAR modules
 Name:		php-pear-%{_pearname}
 Version:	0.1.2
-Release:	%mkrel 1
+Release:	%mkrel 2
 License:	PHP License
 Group:		Development/PHP
 URL:            http://pear.php.net/package/PEAR_Command_Packaging
