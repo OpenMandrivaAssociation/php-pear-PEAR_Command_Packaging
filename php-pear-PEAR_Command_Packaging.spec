@@ -62,7 +62,7 @@ pear install --nodeps --soft --force --register-only \
 %if %mdkversion < 201000
 if [ "$1" -eq "0" ]; then
     pear uninstall --nodeps --ignore-errors --register-only \
-        %{upstream_name} >/dev/null || :
+        %{pear_name} >/dev/null || :
 fi
 %endif
 
@@ -71,3 +71,62 @@ fi
 %{_datadir}/pear/%{_class}
 %{_datadir}/pear/data/%{upstream_name}
 %{_datadir}/pear/packages/%{upstream_name}.xml
+
+
+%changelog
+* Wed May 04 2011 Oden Eriksson <oeriksson@mandriva.com> 0.2.0-5mdv2011.0
++ Revision: 667636
+- mass rebuild
+
+* Fri Dec 03 2010 Oden Eriksson <oeriksson@mandriva.com> 0.2.0-4mdv2011.0
++ Revision: 607130
+- rebuild
+
+* Sat Nov 21 2009 Guillaume Rousse <guillomovitch@mandriva.org> 0.2.0-3mdv2010.1
++ Revision: 467943
+- spec cleanup
+- use pear installer
+- don't ship tests, even in documentation
+- own all directories
+- use rpm filetriggers starting from mandriva 2010.1
+
+* Thu Oct 01 2009 Guillaume Rousse <guillomovitch@mandriva.org> 0.2.0-2mdv2010.0
++ Revision: 452037
+- fix %%postun
+
+* Sun Sep 27 2009 Guillaume Rousse <guillomovitch@mandriva.org> 0.2.0-1mdv2010.0
++ Revision: 450270
+- new version
+- use pear installer
+- use fedora %%post/%%postun
+
+* Thu Sep 03 2009 Christophe Fergeau <cfergeau@mandriva.com> 0.1.2-5mdv2010.0
++ Revision: 426664
+- rebuild
+
+* Wed Dec 31 2008 Oden Eriksson <oeriksson@mandriva.com> 0.1.2-4mdv2009.1
++ Revision: 321891
+- rebuild
+
+* Wed Jun 18 2008 Thierry Vignaud <tv@mandriva.org> 0.1.2-3mdv2009.0
++ Revision: 224841
+- rebuild
+
+* Tue Mar 04 2008 Oden Eriksson <oeriksson@mandriva.com> 0.1.2-2mdv2008.1
++ Revision: 178533
+- rebuild
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - kill re-definition of %%buildroot on Pixel's request
+
+
+* Sat Nov 11 2006 Oden Eriksson <oeriksson@mandriva.com> 0.1.2-1mdv2007.0
++ Revision: 81184
+- Import php-pear-PEAR_Command_Packaging
+
+* Wed Aug 02 2006 Oden Eriksson <oeriksson@mandriva.com> 0.1.2-1mdk
+- initial Mandriva package (fixes #24033)
+
