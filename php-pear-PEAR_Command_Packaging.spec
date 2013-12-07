@@ -5,7 +5,7 @@
 Summary:	Create RPM spec files from PEAR modules
 Name:		php-pear-%{modname}
 Version:	0.3.0
-Release:	4
+Release:	5
 License:	PHP License
 Group:		Development/PHP
 Url:		http://pear.php.net/package/PEAR_Command_Packaging
