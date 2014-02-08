@@ -4,7 +4,7 @@
 
 Name:		php-pear-%{upstream_name}
 Version:	0.3.0
-Release:	1
+Release:	2
 Summary:	Create RPM spec files from PEAR modules
 License:	PHP License
 Group:		Development/PHP
