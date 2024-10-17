@@ -8,7 +8,7 @@ Version:	0.3.0
 Release:	11
 License:	PHP License
 Group:		Development/PHP
-Url:		http://pear.php.net/package/PEAR_Command_Packaging
+Url:		https://pear.php.net/package/PEAR_Command_Packaging
 Source0:	http://download.pear.php.net/package/PEAR_Command_Packaging-%{version}.tgz
 BuildArch:	noarch
 BuildRequires:	php-pear
